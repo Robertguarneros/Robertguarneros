@@ -10,6 +10,6 @@ Hello, I'm Roberto Guarneros. I'm currently pursuing double majors in Aerospace 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=robertguarneros&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://nirzak-streak-stats.vercel.app/?user=robertguarneros&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=robertguarneros&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=robertguarneros&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
