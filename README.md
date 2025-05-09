@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hello, I'm Roberto Guarneros. I'm currently pursuing double majors in Aerospace Engineering and Network Engineering, and I'm passionate about creating innovative solutions that span hardware, firmware, and software. I work at the Nanosat Lab, where I develop software for the 3cat-8 on-board computer, and I collaborate with SEAT-CUPRA to build solutions that streamline car development and reduce costs.
+Hello, I'm Roberto Guarneros. I'm currently pursuing double majors in Aerospace Engineering and Network Engineering, and I'm passionate about creating innovative solutions that span hardware, firmware, and software. I work at the Nanosat Lab, where I develop software for the 3cat-8 on-board computer, and I collaborated with SEAT-CUPRA on a project to build solutions that streamline car development and reduce costs.
 
 
 ## 🌐 Socials:
