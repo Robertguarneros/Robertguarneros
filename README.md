@@ -15,7 +15,7 @@ I’ve worked at the Nanosat Lab (software for the 3Cat-8 on-board computer) and
 <!-- Static cards generated daily by GitHub Actions -->
 ![Daily Metrics](./metrics.svg)
 
-<-- ![Most Used Languages](./languages.svg) -->
+<!-- ![Most Used Languages](./languages.svg) -->
 
 ![3D Contributions](./contrib-3d.svg)
 
