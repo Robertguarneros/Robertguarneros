@@ -32,20 +32,29 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}        # same PAT
+          token: ${{ secrets.METRICS_TOKEN }}     # PAT with read:user + repo
           user: robertguarneros
           template: classic
           base: ""
+          # --- Languages plugin ---
           plugin_languages: yes
           plugin_languages_sections: most-used
-          plugin_languages_limit: 10
-          plugin_languages_details: percentage
+          plugin_languages_limit: 20
+          plugin_languages_details: percentage, bytes-size
           plugin_languages_threshold: 0%
+          plugin_languages_indepth: true          # deeper per-repo analysis
+          plugin_languages_categories: programming # ignore markup/data
+          # If a fork is skewing results, keep forks excluded (default false = exclude)
+          # Include forks only if you really want them:
+          # include_forks: false
+          # Optionally skip noisy repos by name (comma-separated list):
+          # plugin_languages_skipped: repo-with-sdk,huge-generated-project
           config_timezone: Europe/Madrid
           filename: languages.svg
           output_action: commit
           committer_branch: main
           committer_message: "chore: update languages.svg"
+
 
   contrib_3d:
     runs-on: ubuntu-latest
