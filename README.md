@@ -16,5 +16,16 @@ I have worked at the Nanosat Lab, where I developed software for the 3cat-8 on-b
 ![](https://nirzak-streak-stats.vercel.app/?user=robertguarneros&theme=dark&hide_border=false)</br>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=robertguarneros&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
 
+<!-- GitHub Readme Stats -->
+![](https://github-readme-stats.vercel.app/api?username=robertguarneros&theme=dark&hide_border=false&include_all_commits=true&count_private=true&cache_seconds=21600)
+
+<!-- Streak (official host) -->
+![](https://streak-stats.demolab.com?user=robertguarneros&theme=dark&hide_border=false)
+
+<!-- Top languages (cache heavily) -->
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=robertguarneros&theme=dark&hide_border=false&layout=compact&count_private=true&cache_seconds=86400)
+
+
+
 ![Followers](https://img.shields.io/github/followers/robertguarneros?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/robertguarneros?style=for-the-badge)
