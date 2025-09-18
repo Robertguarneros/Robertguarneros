@@ -1,5 +1,9 @@
 # 💫 About Me:
-Hello, I'm Roberto Guarneros. I'm currently pursuing double majors in Aerospace Engineering and Network Engineering, and I'm passionate about creating innovative solutions that span hardware, firmware, and software. I work at the Nanosat Lab, where I develop software for the 3cat-8 on-board computer, and I collaborated with SEAT-CUPRA on a project to build solutions that streamline car development and reduce costs.
+Hello, I'm Roberto Guarneros. I have two degrees, one in Aerospace Engineering and another one in Network Engineering.
+
+I'm passionate about creating innovative solutions that span hardware, firmware, and software. 
+
+I have worked at the Nanosat Lab, where I developed software for the 3cat-8 on-board computer, and I also have collaborated with SEAT-CUPRA on a project to build solutions that streamline car development and reduce costs.
 
 
 ## 🌐 Socials:
@@ -12,4 +16,5 @@ Hello, I'm Roberto Guarneros. I'm currently pursuing double majors in Aerospace 
 ![](https://nirzak-streak-stats.vercel.app/?user=robertguarneros&theme=dark&hide_border=false)</br>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=robertguarneros&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+![Followers](https://img.shields.io/github/followers/robertguarneros?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/robertguarneros?style=for-the-badge)
