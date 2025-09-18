@@ -2,8 +2,12 @@ name: Update profile metrics
 
 on:
   schedule:
-    - cron: "17 6 * * *"   # daily at 06:17 UTC
+    - cron: "17 6 * * *"   # daily
   workflow_dispatch:
+
+# allows the built-in GITHUB_TOKEN to commit files
+permissions:
+  contents: write
 
 jobs:
   metrics_summary:
@@ -11,7 +15,7 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}         # PAT with read:user + repo
+          token: ${{ secrets.METRICS_TOKEN }}        # PAT with read:user + repo
           user: robertguarneros
           template: classic
           base: header, activity, community, repositories
@@ -20,14 +24,15 @@ jobs:
           config_timezone: Europe/Madrid
           filename: metrics.svg
           output_action: commit
-          committer_branch: main                      # change if your default branch != main
+          committer_branch: main
+          committer_message: "chore: update metrics.svg"
 
   metrics_languages:
     runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}         # PAT with read:user + repo (to include private)
+          token: ${{ secrets.METRICS_TOKEN }}        # same PAT
           user: robertguarneros
           template: classic
           base: ""
@@ -40,24 +45,23 @@ jobs:
           filename: languages.svg
           output_action: commit
           committer_branch: main
+          committer_message: "chore: update languages.svg"
 
   contrib_3d:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      # Generate multiple 3D variants under ./profile-3d-contrib/
+      # This action expects ENV vars; use github.token (not secrets)
       - uses: yoshi389111/github-profile-3d-contrib@0.7.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          username: robertguarneros
+        env:
+          GITHUB_TOKEN: ${{ github.token }}          # <-- fix for "GITHUB_TOKEN is empty"
+          USERNAME: robertguarneros
 
-      # Pick your favorite theme; change the filename to taste
       - name: Select theme
-        run: |
-          cp -f profile-3d-contrib/profile-night-rainbow.svg contrib-3d.svg
+        run: cp -f profile-3d-contrib/profile-night-rainbow.svg contrib-3d.svg
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Update 3D contributions graph"
+          commit_message: "chore: update contrib-3d.svg"
           file_pattern: contrib-3d.svg
