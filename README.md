@@ -16,12 +16,4 @@ I’ve worked at the Nanosat Lab (software for the 3Cat-8 on-board computer) and
 ![Daily Metrics](./metrics.svg)
 ![Most Used Languages](./languages.svg)
 ![3D Contributions](./contrib-3d.svg)
-<!-- Reliable live widgets -->
-![](https://streak-stats.demolab.com?user=robertguarneros&theme=dark&hide_border=false)
-![](https://github-profile-trophy.vercel.app/?username=robertguarneros&theme=onedark)
 
-<!-- Simple shields (no API at render time) -->
-![Followers](https://img.shields.io/github/followers/robertguarneros?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/robertguarneros?style=for-the-badge)
-
-<!-- Proudly generated via GitHub Actions (lowlighter/metrics) -->
