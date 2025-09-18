@@ -1,0 +1,42 @@
+name: Update profile metrics
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily at 06:17 UTC
+  workflow_dispatch:      # allow manual run from Actions tab
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      # Card 1: summary metrics (header/activity/community/repos + streak)
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: robertguarneros
+          template: classic
+          base: header, activity, community, repositories
+          plugin_streak: yes
+          plugin_streak_days: 7,30
+          config_timezone: Europe/Madrid
+          filename: metrics.svg
+          output_action: commit
+          # Set this to your default branch name (main or master)
+          committer_branch: main
+
+      # Card 2: most-used languages (top 10 with %)
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: robertguarneros
+          template: classic
+          base: ""  # no header, just the plugin card
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_limit: 10
+          plugin_languages_details: percentage
+          plugin_languages_threshold: 0%
+          config_timezone: Europe/Madrid
+          filename: languages.svg
+          output_action: commit
+          committer_branch: main
